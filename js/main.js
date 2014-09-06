@@ -21,6 +21,7 @@ $(document).ready(function() {
 
     function clickFn(parm1) {
         return function() {
+        	
             $.ajax({
                 //select the service and URI
                 url: 'http://origin-api.macys.com/v4/catalog/product/' + parm1 + '?imagewidth=100&imagequality=90',
@@ -31,6 +32,7 @@ $(document).ready(function() {
                 },
                 success: function(data) {
                     //do something with your data
+                    $("productSelector p").remove();
                     var productid=["first","sec","third"];
                     var productArr=data["product"];
                     for(var i=0;i<productArr.length;i++){
@@ -38,8 +40,7 @@ $(document).ready(function() {
                     	  $("#"+productid[i]).html("<img src='"+imageurl+"' rel='stylesheet'><p><a href='"+productArr[i].productDetails.summary.productURL+"'>buy</a></p>");
                     }
 
-                    $('body').append('Look at your console in developer tools!')
-                    console.log(data);
+                    
                 }
             })
         }

@@ -1,15 +1,15 @@
 {
 	"dateNight":{
 	"red":{
-		"image":"images/LovePic.jpg",
+		"image":"images/RedPic.jpg",
 		"productId":"1621379,757426,758323"
 	},
 	"pink":{
-		"image":"images/Wedding2.jpg",
+		"image":"images/PinkPic.jpg",
 		"productId":"test3"
 	},
 	"white":{
-		"image":"images/ConcertPic.jpg",
+		"image":"images/WhitePic.jpg",
 		"productId":"test4"
 	}}
     
