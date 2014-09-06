@@ -1,5 +1,9 @@
 #macysheader{
-	background-image:url('http://2.resources.macys.com.edgekey.net/r/Y/WI57RQMXE.png');
+	background-image:url('../images/EventsHeader.jpg');
 	margin-top: 21px;
     height: 263px;
+}
+img { -webkit-filter: grayscale(80%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
 }
