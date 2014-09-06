@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     function clickFn(parm1) {
         return function() {
-        	
+
             $.ajax({
                 //select the service and URI
                 url: 'http://origin-api.macys.com/v4/catalog/product/' + parm1 + '?imagewidth=100&imagequality=90',
@@ -37,7 +37,7 @@ $(document).ready(function() {
                     var productArr=data["product"];
                     for(var i=0;i<productArr.length;i++){
                     	  var imageurl="http://slimages.macys.com/is/image/MCY/products/4/optimized/"+productArr[i].productDetails.additionalImages[0].imagename+"?bgc=255,255,255&wid=100&qlt=90&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg";
-                    	  $("#"+productid[i]).html("<img src='"+imageurl+"' rel='stylesheet'><p><a href='"+productArr[i].productDetails.summary.productURL+"'>buy</a></p>");
+                    	  $("#"+productid[i]).html("<img src='"+imageurl+"' rel='stylesheet'><p><a href='"+productArr[i].productDetails.summary.productURL+"'><i class='fa fa-shopping-cart'></i></a></p>");
                     }
 
                     

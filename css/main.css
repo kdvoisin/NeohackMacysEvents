@@ -3,7 +3,21 @@
 	margin-top: 21px;
     height: 263px;
 }
-img { -webkit-filter: grayscale(80%);
+#indexId.img { -webkit-filter: grayscale(80%);
 -moz-filter: grayscale(100%);
 filter: grayscale(100%);
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	body{
+		background-color:red;
+	}
+   #macysheader{
+	background-image: url('../images/EventsHeadersmall.jpg');
+margin-top: 21px;
+height: 110px;
+
+ }
 }
